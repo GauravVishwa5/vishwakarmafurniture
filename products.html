@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Vishwakarma Furniture</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vishwakarma Furniture</h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cart-button">Cart <span id="cart-counter">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="filters">
+        <div class="container">
+            <h2>Filters</h2>
+            <input type="text" id="search" placeholder="Search products">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="chair">Chair</option>
+                <option value="table">Table</option>
+                <option value="bed">Bed</option>
+                <option value="door">Door</option>
+                <option value="wordrobe">Wordrobe</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container" id="product-container">
+            <!-- Product cards will be inserted here dynamically -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Furniture Shop</p>
+        </div>
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-product"></div>
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

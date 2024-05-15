@@ -1,0 +1,538 @@
+/* Add your CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about {
+  padding: 50px 0;
+}
+
+.contact {
+  padding: 50px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Add CSS for product cards */
+.product-card {
+  width: calc(25% - 20px); /* Four cards per row */
+  margin: 10px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  height: 100%; /* Set height to 100% */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px; /* Center-align images and add margin */
+}
+
+.product-card h3 {
+  font-size: 16px; /* Adjust font size */
+  margin-bottom: 10px; /* Add bottom margin */
+  height: 40px; /* Set a fixed height for the product name */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.product-card p {
+  font-size: 14px; /* Adjust font size */
+  margin-bottom: 10px; /* Add bottom margin */
+  height: 60px; /* Set a fixed height for description */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.product-card button {
+  display: block;
+  margin-top: auto; /* Align button to bottom */
+  width: 100%; /* Full width button */
+}
+
+.product-card:nth-child(4n+1) {
+  clear: both; /* Start a new row every 4th card */
+}
+
+/* Additional styling for product container */
+#product-container {
+  text-align: center; /* Center-align products */
+}
+
+/* Media query for smaller screens to display products in a single column */
+@media screen and (max-width: 768px) {
+  .product-card {
+      width: calc(50% - 20px); /* Two cards per row */
+  }
+
+  .product-card:nth-child(odd) {
+      clear: both; /* Start a new row for every odd card */
+  }
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+#cart-counter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.carousel-item .card {
+  width: 650px; /* Set the width of the card */
+  height: 600px; /* Set the height of the card */
+  border-radius: 30px; /* Set the border radius */
+  background: #e0e0e0; /* Set the background color */
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff; /* Set the box shadow */
+}
+
+.carousel-item .card img {
+  width: 100%; /* Ensure the image fills the card container */
+  height: 100%; /* Ensure the image fills the card container */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire card */
+}
+/* Your custom CSS styles */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}/* Add your CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about {
+  padding: 50px 0;
+}
+
+.contact {
+  padding: 50px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.product-card {
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.product-card button {
+  display: block;
+  margin-top: auto;
+  width: 100%;
+}
+
+.product-card:nth-child(4n+1) {
+  clear: both;
+}
+
+#product-container {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .product-card {
+      width: calc(50% - 20px);
+  }
+
+  .product-card:nth-child(odd) {
+      clear: both;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#cart-counter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.carousel-item .card {
+  width: 650px;
+  height: 600px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
+
+.carousel-item .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* New styles for interactive table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Button styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Input styles */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Textarea styles */
+textarea {
+  height: 150px;
+}
+
+/* Form container styles */
+.form-container {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+/* Submit button styles */
+.submitbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submitbtn:hover {
+  background-color: #45a049;
+}
+
+/* Reset button styles */
+.resetbtn {
+  background-color: #f44336;
+}
+
+/* Button container styles */
+.btn-container {
+  text-align: center;
+}
+
+/* Message container styles */
+.msg {
+  margin-top: 20px;
+  padding: 16px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
+
+/* Success message styles */
+.success {
+  background-color: #4CAF50;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+/* Your custom CSS styles */
+/* Form container styles */
+.form-container {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Add some bottom margin */
+}
+
+/* Input styles */
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit button styles */
+.submitbtn, .resetbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.submitbtn:hover, .resetbtn:hover {
+  background-color: #45a049;
+}
+
+/* Message container styles */
+.msg {
+  padding: 16px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px; /* Add some top margin */
+  display: none; /* Initially hide the message container */
+}
+
+.success {
+  background-color: #4CAF50;
+}
